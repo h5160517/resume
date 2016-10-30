@@ -1,0 +1,79 @@
+
+/*这是中央四个快捷方块的功能表样式*/
+
+/*以下是title中间四方块css样式*/
+.tlebox{
+  position: relative;
+  float: left;
+  width: 50%;height: 50%;
+  background: repeat;
+  transition: 1s linear;
+}
+
+.tlebox>div{
+  border-radius: 50%;
+  opacity:0;
+  box-sizing: border-box; 
+  position: absolute;
+  transition: 0.35s linear;
+  cursor: pointer;
+  width: 145px;height: 145px;
+  margin: 2.5px;
+  font-family:WebFont2;
+  
+} 
+
+.tlebox:nth-of-type(1) div{
+  right: 0;bottom: 0;
+  box-shadow: 0 -4px 0 10px rgba(0,0,0,0.6); 
+  background:#F08080;
+ 
+}
+ .rotate{ transition:transform 1s;
+     animation: rotate 1s infinite linear; }
+.tlebox:nth-of-type(2) div{
+  left: 0;bottom: 0;
+  box-shadow:inset 0 -6px 0 26px rgba(0,0,0,0.6); 
+  background: #F4A460   ;
+  
+}
+.tlebox:nth-of-type(3) div{
+  right: 0;top: 0;
+   box-shadow:inset 0 -6px 0 26px rgba(0,0,0,0.6); 
+  background: #B687E3; 
+}
+
+.tlebox:nth-of-type(4) div{
+  left: 0;top: 0;
+  box-shadow: 0 -4px 0 10px rgba(0,0,0,0.6); 
+  background: #90EE90;
+    border-radius:50%;
+}
+.tlebox:nth-of-type(4) div #audio img{
+  border-radius:50%;
+  width:100%;height:100%;
+}
+@keyframes rotate{
+ 0% { transform: rotate(0deg); }
+ 100% { transform: rotate(360deg); } 
+} 
+.border{
+  border :5px dashed rgba(255,255,255,0.5);
+}
+#tlespan{
+  position: absolute;
+  top: 30%;left:36%;
+  transform:translate(-25%,-38%);
+  display: none;
+  color: white;
+  font-size: 20px;
+}
+.tlespan1 {
+  position: absolute;
+  top: 60%;left:50%;
+  transform:translate(-50%,-60%);
+  display: none;
+  color: black;
+  font-size: 35px;
+}
+

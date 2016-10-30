@@ -1,0 +1,56 @@
+/*fixtitle(固定导航栏)*/
+body{margin:0;padding:0;background:#fff;font-size:14px;font-family:Arial,Helvetica,'STHeiti','Microsoft YaHei','sans-serif'}
+#fixtitle{
+	position: fixed;
+	top: 0;
+	width: 100%;height: 60px;
+	background:#363636;
+	z-index: 3;
+	opacity: 0.9;
+}
+#titlediv img{
+	width: 100px;height: 60px;
+
+}
+#titlediv{
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;  
+  /*background: cornflowerblue;*/
+}
+#btns{
+  width: 800px;
+  height: 60px;
+  /*background: yellow;*/
+  float:right;
+}
+#btns ul{
+  height: 60px;
+  /*background: red; */
+}
+#btns li{
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  width: 110px;
+  height: 60px;
+  margin: 0px 0px 5px 40px;
+  float: right;
+  border-radius: 6px;
+  overflow: hidden;
+/*  background: yellow;*/
+}
+#btns li:nth-of-type(4){
+	background: #4F4F4F;
+	border-radius: 0px;
+}
+#btns p{
+  transition:all 0.25s ease-in-out ;
+  cursor: pointer;
+  /*background: red;*/
+}
+
+
+
+

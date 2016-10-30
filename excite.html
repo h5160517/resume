@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- 它表示强制浏览器编码设为简体中文(uft-8) -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.75 maximum-scale=0.75, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset = UTF-8" />
+    <title>我不是求职者而是设计师</title>
+    
+    
+    <!--**************************************************************************-->
+    <!--Febcat 9/30/16                                                            -->
+    <!--When I wrote this, only God and I understood what I was doing             -->
+    <!--Now, God only konws                                                       -->                 
+    <!--**************************************************************************-->
+    
+    <link rel="stylesheet" type="text/css" href="css/init-param.css"/>
+    <!--这是引入响应式-->
+         <link rel="stylesheet" type="text/css" href="css/Responsive.css"/>
+    <!--这是中央四个快捷方块各自的功能css样式-->
+    <link rel="stylesheet" type="text/css" href="css/Widget2.css"/>
+    <!--这是导航条的引用-->
+         <link rel="stylesheet" type="text/css" href="css/navigation.css"/>
+         <!--这是content部分的引用-->
+         <link rel="stylesheet" href="css/content.css" />
+         <!--这是引用留言板的css-->
+         <link rel="stylesheet" href="css/message.css" />
+         <!--这是引用的animate库-->
+     <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <style>
+      html,body{
+        width: 100%;height: 100%;
+      }
+      body{
+        overflow: hidden;height: 100%;
+        user-select:none;
+        -webkit-user-select:none;
+        -ms-user-select:none;
+        -moz-user-select:none;
+        transition: 1s linear;
+        background: #0d0d0d;
+      }
+      @font-face{
+        font-family: WebFont;
+        src: url('font/fontstyle1.ttf');
+      }
+      @font-face{
+        font-family: WebFont2;
+        src: url('font/googlefont.ttf');
+      }
+      @font-face{
+        font-family: WebFont3;
+        src: url('font/message.ttf');
+      }
+      /*这是预加载部分*/
+      #onload{
+        color: black;
+        line-height: 100px;
+        font-size: 20px;
+        border-radius: 8px;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        width: 300px;height: 60px;
+        /*background: lightgray;*/
+      }
+      #onload hr{
+        /*position:absolute;*/
+        /*left:0;top:100px;*/
+        height:10px;
+       margin-top:-100px;
+       background: greenyellow;
+      }
+       #onload h1{
+      /*  position:absolute;*/
+        width:100%;
+        color: white;
+       font-size: 60px;
+        /*left:0;*/
+      }
+
+      /*这是title部分的css样式*/
+      #title{
+        /*position: relative;*/
+        width: 100%;height: 100%;
+        background: url(img/首页img/title.jpg) no-repeat;
+        background-position: center center;
+        background-size: cover; 
+        
+      }
+      /*以下播放器css部分*/
+      #img1{
+        cursor: block;
+        display: none;
+        width: 100%;height:100%;
+      }
+      #img2{
+        cursor: pointer;
+        width: 100%;height: 100%;
+      }
+      /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    
+    </style>
+  </head>
+  <body>
+    <!--预加载部分-->
+    <div id="onload">
+     <h1>0%</h1>
+     <p>loading</p>
+   
+     <hr/>
+      
+    </div>
+    
+    <div id="title">
+      <!--以下开头部分中间的盒子-->
+      <div class="tlebox">
+        <div class="tlediv1">
+          <span id="tlespan">Who am </span>
+          <span class="tlespan1">I</span>
+        </div>
+      </div>
+      <div class="tlebox">
+        <div class="tlediv1">
+          <span id="tlespan">My </span>
+          <span class="tlespan1">hobbies</span>
+        </div>
+      </div>
+      <div class="tlebox">
+        <div class="tlediv1">
+          <span class="tlespan1">Chat</span>
+          <span id="tlespan"> We can</span>
+        </div>  
+      </div>
+      <div class="tlebox">
+        <div class="tlediv1">
+          <!--以下播放器-->
+          <div id="audio">
+            <img src="img/首页img/audio_stiop.gif" id="img1">
+            <img src="img/首页img/audio_on.gif" id="img2">
+            <audio id="video1" width="420" loop="loop" src="music/open.mp3" autoplay="autoplay">
+            </audio>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  <!--      导航条     -->
+    <div id="fixtitle">
+      <div id="titlediv">
+        <img src="img/首页img/cat2.gif"/>
+        <div id="btns">
+          <ul>
+            <li>
+              <p>@ ME</p>
+              <p>@ ME</p>
+              <p>联系交流</p>
+            </li>
+            <li>
+              <p>My hobbies</p>
+              <p>My hobbies</p>
+              <p>君子有所爱</p>
+            </li>
+            <li>
+              <p>Who am I</p>
+              <p>Who am I</p>
+              <p>个人简介</p>
+            </li>
+            <li>
+              <p>Top</p>
+              <p>Top</p>
+              <p>返回顶部</p>
+            </li>
+          </ul>
+        </div>
+      </div>    
+    </div>
+      <!--第一部分内容-->
+    <div id="content1">
+      <div id="c1cut">
+        <div id="c1backs">
+          <div class="back" id="back1">
+            <img src="img/content1/c1back0.gif"/ id="backimg1">
+            <div class="c1btnwhite c1btn"></div>
+            <div class="b1img"></div>
+            <span class='b1span'>Feb cat</span>
+          </div>
+          <div class="back" id="back2">
+            <div id="back2img"></div>
+            <div class="c1btnblackUp c1btnUp"></div>
+            <div class="c1btnblack c1btn"></div>
+            <div class="b2spans">
+              <span class="b2span">我的名字是:杨俊</span>
+              <span class="b2span">我是一名从事IT两年多的web前端程序员。 </span>
+              <span class="b2span">期望能够找到一份适合自己的web前端工作!</span>
+            </div>
+          </div>
+          <div class="back">
+            <div class="c1btnblackUp c1btnUp"></div>
+            <div class="c1btnblack c1btn"></div>
+            <div id="dogdiv">
+              <img src="img/content1/dog.png"/>
+            </div>
+            <div class="b3spans">
+              <span class="b3span">精通css javascript网页设计布局</span>
+              <span class="b3span">熟悉常用的js库,tweens.js,bootstrap,angular.js等</span>
+              <span class="b3span">了解一些前后端交互技术,php,ajax等</span>
+            </div>
+          </div>
+          <div class="back">
+            <div id="centerbackimg"></div>
+            <!--<img src="img/content1/c1back3.gif" class="backimg"/>-->
+          </div>
+          <div class="back">
+            <canvas id="myCanvas" width="1000px" height="100px"></canvas>
+            <div class="c1btnwhiteUp c1btnUp"></div>
+            <div class="c1btnwhite c1btn"></div>
+            <div id="about">
+              <div id="about_content" style="padding-top: 10px;">
+                <div id="about_list_content">
+                  <div class="about_list" id="about_list1">
+                    <div class="about_list_eg" id="about_en_edu">education</div>
+                    <div class="about_list_cn" id="about_cn_edu">学历<p>本科</p></div>
+                  </div>
+                            <div class="about_list">
+                                <div class="about_list_eg" id="about_en_age">age</div>
+                                <div class="about_list_cn" id="about_cn_age">年龄<p>25岁</p></div>
+                            </div>
+                            <div class="about_list">
+                                <div class="about_list_eg" id="about_en_loc">location</div>
+                                <div class="about_list_cn" id="about_cn_loc">坐标<p>北京</p></div>
+                            </div>
+                            <div class="about_list">
+                                <div class="about_list_eg" id="about_en_sta">status</div>
+                                <div class="about_list_cn" id="about_cn_sta">状态<p>离职</p></div>
+                            </div>
+                </div>
+                <div id="about_info" style="width: 800px; margin-top: 0px; margin-bottom: 0px;"><p style="bottom: 0px;">2014年毕业于青岛大学</p><p style="bottom: 0px;">性格沉稳,积极乐观,有上进心!</p><p style="bottom: 0px;">喜欢编写代码时沉浸于自己的世界中的感觉!</p></div>
+              </div>
+            </div>        
+          </div>
+          <div class="back">
+            <div class="c1btnwhiteUp c1btnUp"></div>
+            <div id="lastbackimg"></div>
+            <div class=""></div>
+            <div id="c1top">
+              <img src="img/content1/top.gif"/>
+            </div>
+            <div class="b6spans">
+              <span class="b6span">右侧绳结是按钮->返回顶部</span>
+              <span class="b6span">右侧绳结是按钮->返回顶部</span>
+              <span class="b6span">右侧绳结是按钮->返回顶部</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--这是第二部分-->
+    <div id="content2">
+      <div id="backbox1" class="backboxs"></div>
+      <div id="backbox2" class="backboxs"></div>
+      <div id="backbox3" class="backboxs"></div>
+      <div id="backbox4" class="backboxs"></div>
+      <div id="backbox5" class="backboxs"></div>
+      <div id="pixelbox"></div>
+      <div id="Controllerbox">
+        <div id="Controller">
+          <img src="img/content2/flower.gif" id="flower"/>
+          <img src="img/content2/click.gif"/> 
+        </div>
+        <div id="menu">
+            <div id="ulbox">
+              <ul>
+                <li class="lis Os ">One Hobbies</li>
+                <li class="lis As ">Another Hobbies</li>
+                <li class="lis Cs ">Contact Me</li>
+                
+                <li class="lis Os ">One Hobbies</li>
+                <li class="lis As ">Another Hobbies</li>
+                <li class="lis Cs ">Contact Me</li>
+                
+                <li class="lis Os ">One Hobbies</li>
+                <li class="lis As ">Another Hobbies</li>
+                <li class="lis Cs ">Contact Me</li>
+              </ul>
+            </div>
+            <div id="menudiv">
+              <div class="menudivs">
+                 <img src="img/content2/up.png"/> 
+              </div>
+              <div class="menudivs">
+                 <img src="img/content2/down.png"/> 
+              </div>
+              <div class="menudivs">
+                 <img src="img/content2/close.png"/> 
+              </div>
+            </div>
+        </div>
+      </div>
+      <div id="leftshow">
+        <div id="leftone">
+          
+        </div>
+        <div id="lefttwo">
+          <div class="lfet2back">
+            <img src="img/首页img/cat2.gif"/>
+            <span class="lfet2span">Tel:18354250116</span>
+            <span class="lfet2span">QQ:1130306111</span>
+            <span class="lfet2span">Email:1130306111@qq.com</span>
+            <span class="lfet2span">Address:大北京北部区</span>
+          </div>
+        </div>
+      </div>
+      <div id="rightshow">
+        <video width="800" height="">
+          <source src="http://www.bilibili.com/video/av3083618/?zw" type="video/mp4"></source>
+          <object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+            <param name="movie" value="myvideo.swf" />
+            <param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+          </object>
+          当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+        </video>
+      </div>
+    </div>
+    <!--这是第三部分-->
+    <div id="content3">
+      <div id="c3back">
+        <div id="c3hidden">
+          <div id="c3left">
+            <h3>打开新世界的并不是"Hellow World",而是:</h3>
+            <p>H<b>ow&nbsp</b> T<b>o&nbsp&nbsp</b> M<b>ake</b> L<b>ove</b>&nbsp5</p>
+            <div id="contact">
+              <div id="bottom" class="bottomrun animated bounceIn">
+                Chat with me
+              </div>
+            </div>
+          </div>
+          <!--<img src="img/content1/dog.png" id="hiddenimg"/>-->
+        </div>
+        <div id="c3show">
+          <div id="content">
+                   <div id="post">
+                       <textarea class="transition"></textarea>
+                        <input id="postBt" type="button" value="发表评论"/>
+                        <input id="clearBt" type="button" value="清空"/>
+                    </div>
+                    <span>关注公众号,获悉更多咨讯</span>
+                        <div class="QRcode">
+                         <!--  <img src="img/content3/QRcode.jpg"/> -->
+                         <input style="display: none;" id="text" type="text" value="http://www.ljxmcn.com/shake/outletShake.do?method=show&from=singlemessage&isappinstalled=0" />
+                             <div id="qrcode"></div>
+                      </div>
+                </div>
+                <div id="comment">     
+                </div>
+        </div>
+      </div>
+      <!--这是底部-->
+      <div id="endimgbox">
+          
+          <p>Copyright © XX-2016 Febcat</p>
+      </div>
+    </div>
+    
+    
+  </body>
+  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+  <!--这是引用jq的补充动画库-->
+  <script type="text/javascript" src="js/jquery.transit.js"></script>
+  <!--这是scroll 以及一些默认事件阻止的js部分-->
+  <script type="text/javascript" src="js/scroll.js"></script>
+  <!--这是预加载部分-->
+  <script type="text/javascript" src="js/loading.js"></script>
+  <!--这是导航条部分-->
+  <script type="text/javascript" src="js/navigation.js"></script>
+  <!--这是content部分-->
+  <script type="text/javascript" src="js/content.js"></script>
+  <!--content1的canvas部分的引用-->
+  <script type="text/javascript" src="js/content1.canvas.js"></script>
+  <!-- 这是content1开头方格动画布局引用 -->
+  <script type="text/javascript" src="js/transform2.js"></script>
+  <script type="text/javascript" src="js/line.js"></script>
+<script type="text/javascript" src="js/qrcode.js"></script>
+
+
+  <script type="text/javascript">   
+    window.onload=function(){
+      c1num=0;//这是控制content1部分的轮播
+      //这是调用播放器函数部分
+      $('#img1').click(function(){
+        playPause();
+      });
+      $('#img2').click(function(){
+        playPause();
+      });
+
+      //这是scroll事件的函数
+      Scroll();
+      fixtitle();
+      content1();
+      content2();
+      content3();     
+    //这是关于播放器的设定
+    function playPause() {
+      var myVideo=document.querySelector("audio");
+      if(myVideo.paused) {
+        myVideo.play();
+        $('#img1').css({"display":"none"});
+        $('#img2').css({"display":"block"});
+      } else {
+        myVideo.pause();
+        $('#img1').css({"display":"block"});
+        $('#img2').css({"display":"none"});
+        
+      }
+    }
+  }
+  </script>
+<script type="text/javascript">
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+  width : 200,
+  height : 200
+});
+
+function makeCode () {    
+  var elText = document.getElementById("text");
+  qrcode.makeCode(elText.value);
+}
+makeCode();
+
+</script>
+  
+</html>
